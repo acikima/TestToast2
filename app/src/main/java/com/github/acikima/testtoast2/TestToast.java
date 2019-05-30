@@ -5,6 +5,22 @@ import android.content.Intent;
 import android.widget.Toast;
 
 public class TestToast {
-    public TestToast() {
+    String message;
+
+    public TestToast(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(Context context, String message) {
+        this.message = message;
+        showToast(context);
+    }
+
+    public void showToast(Context context){
+        Toast.makeText(context, this.message, Toast.LENGTH_LONG);
     }
 }
