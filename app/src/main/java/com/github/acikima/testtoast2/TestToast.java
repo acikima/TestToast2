@@ -4,11 +4,12 @@ import android.content.Context;
 import android.widget.Toast;
 
 public class TestToast {
+    String message;
     public TestToast(Context ctx){
-
+        message = "Hello World";
     }
     public void showToast(Context context){
 
-        Toast.makeText(context, "Hello World", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
 }
