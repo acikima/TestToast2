@@ -5,11 +5,22 @@ import android.widget.Toast;
 
 public class TestToast {
     String message;
-    public TestToast(Context ctx){
-        message = "Hello World";
+
+    public TestToast(String message) {
+        this.message = message;
     }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(Context context, String message) {
+        this.message = message;
+        showToast(context);
+    }
+
     public void showToast(Context context){
 
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, this.message, Toast.LENGTH_SHORT).show();
     }
 }
