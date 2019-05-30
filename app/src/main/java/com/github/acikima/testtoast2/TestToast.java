@@ -4,6 +4,9 @@ import android.content.Context;
 import android.widget.Toast;
 
 public class TestToast {
+    public TestToast(Context ctx){
+
+    }
     public void showToast(Context context){
 
         Toast.makeText(context, "Hello World", Toast.LENGTH_SHORT).show();
