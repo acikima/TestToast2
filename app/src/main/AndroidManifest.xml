@@ -1,7 +1,3 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.acikima.testtoast2" xmlns:tools="http://schemas.android.com/tools">
-
-    <application
-        tools:replace="android:name"
-        android:name=".TestToast"/>
+    package="com.github.acikima.testtoast2">
 </manifest>

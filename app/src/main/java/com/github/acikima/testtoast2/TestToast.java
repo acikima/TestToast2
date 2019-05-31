@@ -1,28 +1,22 @@
 package com.github.acikima.testtoast2;
 
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-public class TestToast extends Application {
-    private static TestToast mContext;
+public class TestToast {
     String greet;
 
-    public TestToast() {
-        mContext = this;
+    public TestToast(Context ctx) {
+        Toast.makeText(ctx, "First toast", Toast.LENGTH_LONG);
         this.greet = "Hey Ima";
-    }
-
-    public static Context getContext() {
-        return mContext;
     }
 
     public String getGreet() {
         return greet;
     }
 
-    public void showToast(){
-        Toast.makeText(TestToast.getContext(), "U made it Imaaaa", Toast.LENGTH_LONG);
+    public void showToast(Context context){
+        Toast.makeText(context, "U made it Imaaaa", Toast.LENGTH_LONG);
     }
 }
