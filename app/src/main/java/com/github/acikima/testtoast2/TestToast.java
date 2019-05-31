@@ -1,14 +1,12 @@
 package com.github.acikima.testtoast2;
 
 import android.content.Context;
-import android.content.Intent;
 import android.widget.Toast;
 
 public class TestToast {
     String greet;
 
-    public TestToast(Context ctx) {
-        Toast.makeText(ctx, "First toast", Toast.LENGTH_LONG);
+    public TestToast() {
         this.greet = "Hey Ima";
     }
 
