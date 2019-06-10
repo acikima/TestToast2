@@ -17,7 +17,7 @@ public class TestToast {
     }
 
     public void showToast(Context context){
-        Toast.makeText(context, "U made it Imaaaa", Toast.LENGTH_LONG);
+        Toast.makeText(context, "U made it Imaaaa", Toast.LENGTH_LONG).show();
     }
 
     public void showDialog(Context context){
